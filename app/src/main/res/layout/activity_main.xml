@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scrollingtext.MainActivity">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News"
+        android:background="#3371FF"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        android:width="20000px"
+         />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_heading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/article_subheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Why has Liverpool vs Man Utd been postponed?"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textSize="50px"
+                android:width="20000px"
+                />
+            <TextView
+                android:id="@+id/article_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="According to https://www.nationalworld.com, Liverpool and Manchester United were set to go head-to-head in the Premier League this weekend, but the fixture has been postponed. We look at when the reschedule date could be. Liverpool and Manchester United were meant to renew their rivalry this weekend, but the derby will not go ahead.
+
+                Jurgen Klopp’s men are keeping up the pressure in the Premier League title race, while also competing in the Champions League and FA Cup, also winning the Carabao Cup earlier this season. It hasn’t been quite so exciting for Manchester United this season, though they are still in the hunt for the top four.
+
+                But neither team will have the chance to further their Premier League hopes against their North-West rivals this weekend, and here we look at why. Klopp’s men take on Nottingham Forest away from home in the quarter-finals on Sunday, and their cup commitment means they can’t compete in the Premier League.
+
+                The United clash has now been moved as a result, with Liverpool looking to keep their quadruple hopes alive. At this point, we don’t know when the game will be rescheduled for.
+
+                European commitments mean it’s going to be tricky to find a new date for the game, with only three dates available.
+
+                20 April, 11 May and 18 May, all midweek dates, are the only current options on the table.
+
+                Though, should Liverpool progress in the FA Cup, they may need to find a date for another rescheduled game.
+
+                The Premier League are yet to announce the date, but given the size of this derby, they are likely to confirm a solution soon."
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textSize="35px"
+                android:width="20000px"
+
+
+        />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
